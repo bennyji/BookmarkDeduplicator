@@ -87,4 +87,4 @@ A lightweight and efficient browser extension that helps you **scan and remove d
 [MIT License](LICENSE) © 2025 bennyji
 
 ## 🙌 Feedback & Support
-- 💬 [GitHub Issues](https://github.com/yourname/bookmark-deduplicator/issues)
+- 💬 [GitHub Issues](https://github.com/bennyji/BookmarkDeduplicator/issues)
