@@ -84,8 +84,7 @@ A lightweight and efficient browser extension that helps you **scan and remove d
 ![Popup Interface](screenshots/popup.png)
 
 ## 📄 License
-[MIT License](LICENSE) © 2025 Your Name
+[MIT License](LICENSE) © 2025 bennyji
 
 ## 🙌 Feedback & Support
 - 💬 [GitHub Issues](https://github.com/yourname/bookmark-deduplicator/issues)
-- 💌 Email: youremail@example.com
