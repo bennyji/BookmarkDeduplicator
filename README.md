@@ -45,9 +45,9 @@
 
 ## 🖼️ 截图预览
 
-> 📷 _（你可以上传截图后替换下方链接）_
+> 📷 _（请上传截图后替换下方链接）_
 
-<!-- 示例（请替换为你的实际截图） -->
+<!-- 示例 -->
 ![Popup界面示例](screenshots/popup.png)
 
 ---
@@ -80,11 +80,100 @@ Permission is hereby granted...
 
 - 💬 [GitHub Issues](https://github.com/yourname/bookmark-deduplicator/issues)
 - 🐞 报告 Bug / 提出功能请求
-- 💌 也可以通过邮箱：youremail@example.com（可选）
+- 💌 邮箱：youremail@example.com（可选）
 
 ---
 
-## 🏷️ 关键词
+<br><hr><br>
 
-#书签去重 #BookmarkCleaner #Edge扩展 #Chrome扩展 #去重工具 #浏览器插件 #书签管理
+# 📚 Bookmark Deduplicator
+
+A lightweight and efficient browser extension that helps you **scan and remove duplicate bookmarks**, keeping your bookmark bar clean and organized. Supports matching by name only or name + URL, runs smoothly in the background, and offers an intuitive one-click cleanup experience!
+
+✨ Compatible with Microsoft Edge / Google Chrome and other Chromium-based browsers.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
+
+## 🔍 Features
+
+- ✅ **Smart Deduplication**: Choose to detect duplicates by "bookmark name" or "name + URL"
+- ⚙️ **Runs in Background**: Non-blocking scan with real-time progress bar
+- 🛑 **Stop Anytime**: Stop button allows interruption during scanning
+- 📁 **Supports Collapsed Folders**: Preserves original folder structure without disruption
+- ✔️ **Selective Cleanup**: Review and select which duplicates to delete after scanning
+- 🎛️ **Toggleable Filters**: Flexibly control which folders are included in the scan
+- 📊 **Optimized Summary Display**: Clear statistics of duplicate groups for easy review
+
+---
+
+## 🚀 Installation
+
+### Method 1: Install from Official Store (Recommended)
+
+👉 [Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/) (Search for "Bookmark Deduplicator")
+
+Or Chrome Web Store (if published)
+
+### Method 2: Load Locally (Developer Mode)
+
+1. Clone or download this repository:
+   ```bash
+   git clone https://github.com/yourname/bookmark-deduplicator.git
+   ```
+2. Open Edge or Chrome, go to:
+   ```
+   Extensions page: edge://extensions/ or chrome://extensions/
+   ```
+3. Enable "Developer mode" in the top-right corner
+4. Click "Load unpacked" and select the project folder
+
+---
+
+## 🖼️ Screenshot Preview
+
+> 📷 _Replace with your actual screenshots_
+
+<!-- Example -->
+![Popup Interface](screenshots/popup.png)
+
+---
+
+## 📄 Privacy Statement
+
+This extension **does not collect, upload, or share** any of your bookmark data. All operations are performed locally and run completely offline, ensuring your privacy is protected.
+
+> 🔐 Your data belongs to you.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE). Free to use, modify, and distribute.
+
 ```
+MIT License
+
+Copyright (c) 2025 Your Name
+
+Permission is hereby granted...
+```
+
+---
+
+## 🙌 Feedback & Support
+
+Encountered a bug? Have a feature request? Feel free to open an issue or contact me!
+
+- 💬 [GitHub Issues](https://github.com/yourname/bookmark-deduplicator/issues)
+- 🐞 Report bugs or suggest features
+- 💌 Email: youremail@example.com (optional)
+
+---
+
+## 🏷️ Keywords
+
+#BookmarkDeduplicator #RemoveDuplicateBookmarks #EdgeExtension #ChromeExtension #BookmarkCleaner #BrowserExtension #BookmarksManager
+```
+
