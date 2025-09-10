@@ -1,6 +1,6 @@
 # 📚 Bookmark Deduplicator
 
-一款轻量高效的浏览器扩展，帮助你**扫描并删除重复的书签**，保持书签栏整洁有序。支持按名称或名称+网址匹配，后台运行不卡顿，操作直观，一键清理！
+一款轻量高效的浏览器扩展，帮助你**扫描并删除浏览器中重复的书签**，保持书签栏整洁有序。支持按名称或名称+网址匹配，后台运行不卡顿，操作直观，一键清理！
 
 A lightweight and efficient browser extension that helps you **scan and remove duplicate bookmarks**, keeping your bookmark bar clean and organized. Supports matching by name only or name + URL, runs smoothly in the background, and offers an intuitive one-click cleanup experience!
 
