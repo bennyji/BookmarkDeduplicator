@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>书签去重器</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+    h3 {
+       text-align: center;
+       margin-top: 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    #scanButton {
+        background-color: #2196F3; /* Blue */
+        color: white;
+    }
+    #scanButton:hover {
+        background-color: #0b7dda;
+    }
+    #scanButton:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+
+    #cleanButton {
+        background-color: #f44336; /* Red */
+        color: white;
+        display: none;
+    }
+    #cleanButton:hover {
+        background-color: #d32f2f;
+    }
+    #cleanButton:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+
+    #stopButton {
+        background-color: #9E9E9E; /* Gray */
+        color: white;
+        display: none; /* 初始隐藏 */
+    }
+    #stopButton:hover {
+        background-color: #757575;
+    }
+    #stopButton:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+
+    #viewProgressButton {
+        background-color: #FF9800; /* Orange */
+        color: white;
+        display: none; /* 初始隐藏 */
+    }
+    #viewProgressButton:hover {
+        background-color: #e68900;
+    }
+    #viewProgressButton:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+
+    /* --- 新增：重置同步按钮样式 --- */
+    #resetSyncButton {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        display: none; /* 初始隐藏 */
+    }
+    #resetSyncButton:hover {
+        background-color: #45a049;
+    }
+    #resetSyncButton:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+    }
+    /* --- 新增：说明文字样式 --- */
+    #syncInfoText {
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+        margin-top: 5px;
+        display: none; /* 初始隐藏 */
+    }
+
+
+    /* 全选区域容器 */
+    #selectAllContainer {
+        margin: 10px 0;
+        display: none;
+        text-align: left;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    /* 全选复选框和标签 */
+    #selectAllCheckbox {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    #selectAllLabel {
+        vertical-align: middle;
+        cursor: pointer;
+        margin-right: 15px; /* 与开关间距 */
+    }
+    /* 筛选开关容器 */
+    #filterSwitchContainer {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /* 筛选开关标签 */
+    #filterSwitchLabel {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    #filterSwitchLabel input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: .4s;
+        border-radius: 24px;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+    }
+    input:checked + .slider {
+        background-color: #2196F3;
+    }
+    input:checked + .slider:before {
+        transform: translateX(26px);
+    }
+    /* 筛选开关文字 */
+    #filterSwitchText {
+        font-size: 12px;
+        vertical-align: top;
+    }
+
+    #status, #progressContainer, #cleanupProgressContainer {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    #progressContainer, #cleanupProgressContainer {
+        display: none;
+    }
+    .progress-bar-outer {
+        width: 100%;
+        height: 20px;
+        background-color: #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+    .progress-bar-inner {
+        height: 100%;
+        width: 0%;
+        background-color: #4CAF50;
+        transition: width 0.3s ease-in-out;
+    }
+    .progress-text {
+        font-size: 14px;
+    }
+
+    .info {
+      background-color: #e7f3ff;
+      color: #004085;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    #results {
+        margin-top: 15px;
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        display: none;
+        text-align: left;
+        font-size: 12px;
+    }
+    .duplicate-group {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .group-header {
+        padding: 5px 10px;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        user-select: none; /* 防止文本选中 */
+        display: flex; /* 使用 Flexbox */
+        align-items: center; /* 垂直居中 */
+    }
+    .group-checkbox {
+        margin-right: 8px; /* 复选框和文本间距 */
+    }
+    .group-summary {
+        flex-grow: 1; /* 摘要信息占据剩余空间 */
+        font-weight: bold;
+        white-space: nowrap; /* 防止换行 */
+        overflow: hidden; /* 超出部分隐藏 */
+        text-overflow: ellipsis; /* 超出部分显示省略号 */
+    }
+    .group-count {
+        margin-left: 5px;
+        color: #666;
+        font-size: 0.9em;
+    }
+    .group-items {
+        padding: 5px 10px 5px 25px; /* 左侧增加缩进 */
+        display: none; /* 默认隐藏 */
+    }
+    .group-item {
+        margin-bottom: 3px;
+        word-break: break-all; /* 长链接换行 */
+    }
+    .keep-item {
+        font-weight: bold;
+        color: green;
+    }
+    .remove-item {
+        color: red;
+    }
+    .remove-item input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    .mode-indicator {
+        font-size: 10px;
+        color: #888;
+        margin-left: 5px;
+        font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <h3>书签去重器</h3>
+  <button id="scanButton">1. 扫描重复书签</button>
+  <button id="cleanButton">2. 开始后台清理</button>
+  <button id="stopButton">停止清理</button>
+  <button id="viewProgressButton">查看/刷新进度</button>
+
+  <!-- --- 新增：重置同步按钮和说明文字 --- -->
+  <button id="resetSyncButton">3. 重置浏览器同步数据</button>
+  <div id="syncInfoText">点击上方按钮前往 Edge 设置页面，手动重置同步数据以应用更改。</div>
+  <!-- --- --- -->
+
+  <div id="selectAllContainer">
+    <input type="checkbox" id="selectAllCheckbox">
+    <label for="selectAllCheckbox" id="selectAllLabel">全选/取消全选</label>
+    <!-- 新增筛选开关 -->
+    <div id="filterSwitchContainer">
+      <label id="filterSwitchLabel">
+        <input type="checkbox" id="filterSwitch">
+        <span class="slider"></span>
+      </label>
+      <span id="filterSwitchText">严格模式 (标题+网址)</span>
+    </div>
+  </div>
+
+  <div id="progressContainer">
+    <div class="progress-bar-outer">
+      <div id="scanProgressBar" class="progress-bar-inner"></div>
+    </div>
+    <div id="scanProgressText" class="progress-text">初始化中...</div>
+  </div>
+
+  <div id="cleanupProgressContainer">
+    <div class="progress-bar-outer">
+      <div id="cleanupProgressBar" class="progress-bar-inner"></div>
+    </div>
+    <div id="cleanupProgressText" class="progress-text">等待后台任务开始...</div>
+  </div>
+
+  <div id="status" class="info">请点击“扫描重复书签”开始。</div>
+  <div id="results"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
+

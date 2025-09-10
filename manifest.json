@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "书签去重器 Bookmark Deduplicator",
+  "version": "2.2",
+  "description": "扫描并移除重复的书签（可选按书签名或书签名+网址）。可在后台运行，带有进度条和停止按钮。支持折叠组、选择性清理、筛选开关和优化的组摘要显示。",
+  "permissions": [
+    "bookmarks",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "书签去重器"
+  },
+  "icons": {
+    "16": "icon16.ico",
+    "32": "icon32.ico",
+    "48": "icon48.ico",
+    "128": "icon128.ico"
+  }
+}
