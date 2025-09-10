@@ -81,7 +81,7 @@ A lightweight and efficient browser extension that helps you **scan and remove d
 ---
 
 ## 🖼️ Screenshot Preview
-![Popup Interface](screenshots/popup.png)
+![Popup Interface](screenshots/popup1.png)![Popup Interface](screenshots/popup2.png)![Popup Interface](screenshots/popup3.png)
 
 ## 📄 License
 [MIT License](LICENSE) © 2025 bennyji
