@@ -27,9 +27,9 @@ A lightweight and efficient browser extension that helps you **scan and remove d
   - 📊 **优化的摘要显示**：清晰展示重复组统计信息，一目了然
 
   ## 🚀 安装方法
-  ### 方法一：从官方商店安装（Chrome支持，edge暂不支持，开发者19美刀价格有点贵推荐）
+  ### 方法一：从官方商店安装
   👉 [Chrome webstore 商店](https://chromewebstore.google.com/?hl=zh-CN&authuser=0)（搜索 "Bookmark Deduplicator"）
-  X [Edge Add-ons 商店](https://microsoftedge.microsoft.com/addons/)（搜索 "Bookmark Deduplicator"）
+  👉 [Edge Add-ons 商店](https://microsoftedge.microsoft.com/addons/)（搜索 "Bookmark Deduplicator"）
 
   ### 方法二：从本地加载（开发者模式）
   1. 克隆或下载本仓库：
@@ -60,8 +60,9 @@ A lightweight and efficient browser extension that helps you **scan and remove d
   - 📊 **Optimized Summary**: Clear display of duplicate groups
 
   ## 🚀 Installation
-  ### Method 1: Install from Store (Chrome support, Edge not support)
+  ### Method 1: Install from Store 
   👉 [Chrome webstore](https://chromewebstore.google.com/?hl=zh-CN&authuser=0)（Search for "Bookmark Deduplicator"）
+  👉 [Edge Add-ons ](https://microsoftedge.microsoft.com/addons/)（Search for "Bookmark Deduplicator"）
 
 
   ### Method 2: Load Locally (Developer Mode)
