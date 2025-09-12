@@ -87,8 +87,10 @@ Compatible with Microsoft Edge / Google Chrome and other Chromium-based browsers
 
 ## 🖼️ Screenshot Preview
 
-| ![Popup1](screenshots/popup1.png) | ![Popup2](screenshots/popup2.png) | ![Popup3](screenshots/popup3.png) | ![Popup4](screenshots/popup4.png) |
-|-----------------------------------|-----------------------------------|-----------------------------------|-----------------------------------|
+| 语言 Language       | 界面截图 1                     | 界面截图 2                     | 界面截图 3                     |
+|---------------------|--------------------------------|--------------------------------|--------------------------------|
+| 中文界面截图        | [Popup1](screenshots/中1.png)  | [Popup2](screenshots/中2.png)  | [Popup3](screenshots/中3.png)  |
+| English Screenshots | [Popup1](screenshots/英文1.png)| [Popup2](screenshots/英2.png)  | [Popup3](screenshots/英3.png)  |
 
 ## 📄 License
 [MIT License](LICENSE) © 2025 bennyji
