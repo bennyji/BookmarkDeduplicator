@@ -10,7 +10,7 @@ Compatible with Microsoft Edge / Google Chrome and other Chromium-based browsers
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID)
-[![Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/%E4%B9%A6%E7%AD%BE%E5%8E%BB%E9%87%8D%E5%99%A8-bookmark-deduplicat/iockbhndobjnencflhcnddlbamgpdloj)
+[![Edge Add-ons](https://img.shields.io/badge/Microsoft%20Edge-0078D7?style=for-the-badge&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/%E4%B9%A6%E7%AD%BE%E5%8E%BB%E9%87%8D%E5%99%A8-bookmark-deduplicat/iockbhndobjnencflhcnddlbamgpdloj)
 
 ---
 
