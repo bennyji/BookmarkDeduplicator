@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>书签去重器</title>
+  <title>Bookmark Deduplicator</title> <!-- Default title, will be updated by JS -->
   <style>
     body {
       width: 400px;
@@ -10,10 +10,42 @@
       font-family: Arial, sans-serif;
       box-sizing: border-box;
     }
-    h3 {
-       text-align: center;
-       margin-top: 0;
+
+    /* --- 新增：标题容器 Flex 布局 --- */
+    .title-container {
+      display: flex;
+      justify-content: space-between; /* 两端对齐 */
+      align-items: center;             /* 垂直居中 */
+      margin-bottom: 15px;             /* 与下方按钮间距 */
     }
+    .title-spacer {
+        width: 60px; /* 大致等于按钮宽度，用于平衡布局 */
+    }
+    #popupTitle {
+       text-align: center;
+       margin: 0;
+       flex-grow: 1; /* 占据中间可用空间 */
+       font-size: 18px; /* 可根据需要调整 */
+    }
+    #languageSwitchButton {
+        background-color: #607D8B; /* Blue Grey */
+        color: white;
+        font-size: 12px;
+        padding: 5px 10px; /* 调整 padding 使按钮更紧凑 */
+        width: auto;
+        min-width: 60px; /* 设置最小宽度与 spacer 匹配 */
+        /* 移除 float 和 margin-top/bottom */
+        margin: 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    #languageSwitchButton:hover {
+        background-color: #455A64;
+    }
+    /* --- --- --- */
+
+    /* 原有按钮样式保持不变，但移除 h3 的 margin-top */
     button {
       width: 100%;
       padding: 10px;
@@ -73,6 +105,9 @@
         background-color: #cccccc;
         cursor: not-allowed;
     }
+
+    /* --- 移除了原来的 #languageSwitchButton 样式 --- */
+
 
     /* --- 新增：重置同步按钮样式 --- */
     #resetSyncButton {
@@ -278,27 +313,34 @@
   </style>
 </head>
 <body>
-  <h3>书签去重器</h3>
-  <button id="scanButton">1. 扫描重复书签</button>
-  <button id="cleanButton">2. 开始后台清理</button>
-  <button id="stopButton">停止清理</button>
-  <button id="viewProgressButton">查看/刷新进度</button>
+  <!-- --- 修改：使用 Flex 容器包裹标题和按钮 --- -->
+  <div class="title-container">
+     <div class="title-spacer"></div> <!-- 左侧占位符 -->
+     <h3 id="popupTitle">Bookmark Deduplicator</h3>
+     <button id="languageSwitchButton">EN/中文</button>
+  </div>
+  <!-- --- --- --- -->
+
+  <button id="scanButton">1. Scan for Duplicates</button>
+  <button id="cleanButton">2. Start Background Cleanup</button>
+  <button id="stopButton">Stop Cleanup</button>
+  <button id="viewProgressButton">View/Refresh Progress</button>
 
   <!-- --- 新增：重置同步按钮和说明文字 --- -->
-  <button id="resetSyncButton">3. 重置浏览器同步数据</button>
-  <div id="syncInfoText">点击上方按钮前往 Edge 设置页面，手动重置同步数据以应用更改。</div>
+  <button id="resetSyncButton">3. Reset Browser Sync Data</button>
+  <div id="syncInfoText">Click the button above to go to the Edge settings page to manually reset sync data to apply changes.</div>
   <!-- --- --- -->
 
   <div id="selectAllContainer">
     <input type="checkbox" id="selectAllCheckbox">
-    <label for="selectAllCheckbox" id="selectAllLabel">全选/取消全选</label>
+    <label for="selectAllCheckbox" id="selectAllLabel">Select All/Deselect All</label>
     <!-- 新增筛选开关 -->
     <div id="filterSwitchContainer">
       <label id="filterSwitchLabel">
         <input type="checkbox" id="filterSwitch">
         <span class="slider"></span>
       </label>
-      <span id="filterSwitchText">严格模式 (标题+网址)</span>
+      <span id="filterSwitchText">Strict Mode (Title + URL)</span>
     </div>
   </div>
 
@@ -306,17 +348,17 @@
     <div class="progress-bar-outer">
       <div id="scanProgressBar" class="progress-bar-inner"></div>
     </div>
-    <div id="scanProgressText" class="progress-text">初始化中...</div>
+    <div id="scanProgressText" class="progress-text">Initializing...</div>
   </div>
 
   <div id="cleanupProgressContainer">
     <div class="progress-bar-outer">
       <div id="cleanupProgressBar" class="progress-bar-inner"></div>
     </div>
-    <div id="cleanupProgressText" class="progress-text">等待后台任务开始...</div>
+    <div id="cleanupProgressText" class="progress-text">Waiting for background task to start...</div>
   </div>
 
-  <div id="status" class="info">请点击“扫描重复书签”开始。</div>
+  <div id="status" class="info">Please click "Scan for Duplicates".</div>
   <div id="results"></div>
 
   <script src="popup.js"></script>

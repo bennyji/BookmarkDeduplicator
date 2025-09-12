@@ -101,7 +101,7 @@ async function processBatch(idsBatch) {
                 console.log(`书签 ID: ${id} 的删除因停止请求被跳过。`);
             }
         }
-        if (result.status === 'fulfilled' || result.reason.message !== "STOP_REQUESTED_DURING_WAIT") {
+        if (result.status === 'fulfilled' || (result.status === 'rejected' && result.reason.message !== "STOP_REQUESTED_DURING_WAIT")) {
              cleanupState.processed++;
         }
     });
@@ -137,3 +137,7 @@ async function performCleanup() {
     await saveState();
     console.log("最终状态:", cleanupState);
 }
+
+
+
+
