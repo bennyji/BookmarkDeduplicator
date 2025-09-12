@@ -1,0 +1,129 @@
+{
+  "extensionName": {
+    "message": "Bookmark Deduplicator - Clean Up Duplicates Efficiently",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Intelligently scan and remove duplicate bookmarks with multiple matching modes and background operation to keep your bookmarks bar tidy.",
+    "description": "Extension description"
+  },
+  "extensionTitle": {
+    "message": "     Bookmark Deduplicator",
+    "description": "Extension title (toolbar tooltip)"
+  },
+  "featureSmart": {
+    "message": "Smart Deduplication: Choose to identify duplicates by 'Bookmark Name' or 'Name + URL'",
+    "description": "Feature description: Smart deduplication"
+  },
+  "featureBackground": {
+    "message": "Background Operation: Scanning doesn't block the browser, with real-time progress bar support",
+    "description": "Feature description: Background operation"
+  },
+  "featureStop": {
+    "message": "Stop Anytime: Provides a 'Stop' button to interrupt the scanning process",
+    "description": "Feature description: Ability to stop"
+  },
+  "featureFolders": {
+    "message": "Folder Support: Preserves original bookmark structure without disturbing groups",
+    "description": "Feature description: Folder support"
+  },
+  "featureSelective": {
+    "message": "Selective Cleanup: After scanning, you can select which duplicates to delete",
+    "description": "Feature description: Selective cleanup"
+  },
+  "featureFilter": {
+    "message": "Filter Switches: Flexibly control which folders participate in the scan",
+    "description": "Feature description: Filter switches"
+  },
+  "featureSummary": {
+    "message": "Optimized Summary Display: Clearly shows duplicate group statistics at a glance",
+    "description": "Feature description: Optimized summary"
+  },
+  "buttonScan": {
+    "message": "Scan for Duplicates",
+    "description": "Button text: Scan"
+  },
+  "buttonStop": {
+    "message": "Stop Scanning",
+    "description": "Button text: Stop"
+  },
+  "buttonDelete": {
+    "message": "Delete Selected",
+    "description": "Button text: Delete selected"
+  },
+  "labelMatchByName": {
+    "message": "Match by Name",
+    "description": "Label: Match by name"
+  },
+  "labelMatchByNameAndUrl": {
+    "message": "Match by Name and URL",
+    "description": "Label: Match by name and URL"
+  },
+  "labelProgress": {
+    "message": "Scan Progress:",
+    "description": "Label: Progress"
+  },
+  "labelStatusScanning": {
+    "message": "Scanning...",
+    "description": "Status text: Scanning"
+  },
+  "labelStatusCompleted": {
+    "message": "Scan Completed!",
+    "description": "Status text: Completed"
+  },
+  "labelStatusStopped": {
+    "message": "Scan Stopped.",
+    "description": "Status text: Stopped"
+  },
+  "labelStatusNoDupes": {
+    "message": "No duplicate bookmarks found.",
+    "description": "Status text: No duplicates found"
+  },
+  "labelFoldersToScan": {
+    "message": "Select Folders to Scan:",
+    "description": "Label: Folders to scan"
+  },
+  "labelSelectAll": {
+    "message": "Select All",
+    "description": "Label: Select all"
+  },
+  "labelDeselectAll": {
+    "message": "Deselect All",
+    "description": "Label: Deselect all"
+  },
+  "labelDupeGroup": {
+    "message": "Duplicate Group",
+    "description": "Label: Duplicate group"
+  },
+  "labelItemsInGroup": {
+    "message": "Items in Group:",
+    "description": "Label: Items in group"
+  },
+  "placeholderSearch": {
+    "message": "Search bookmarks...",
+    "description": "Placeholder text: Search"
+  },
+  "tooltipSettings": {
+    "message": "Settings",
+    "description": "Tooltip: Settings"
+  },
+  "tooltipRefresh": {
+    "message": "Refresh",
+    "description": "Tooltip: Refresh"
+  },
+  "confirmDelete": {
+    "message": "Are you sure you want to delete the selected bookmarks? This action cannot be undone.",
+    "description": "Confirmation message for deletion"
+  },
+  "errorGeneric": {
+    "message": "An unknown error occurred.",
+    "description": "Generic error message"
+  },
+  "errorNoPermission": {
+    "message": "Missing bookmark access permission.",
+    "description": "Error message: No permission"
+  }
+}
+
+
+
