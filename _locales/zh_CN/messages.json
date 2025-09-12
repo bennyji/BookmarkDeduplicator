@@ -1,0 +1,129 @@
+{
+  "extensionName": {
+    "message": "书签去重工具 - 轻量高效清理重复书签",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "智能扫描并删除重复书签，支持多种匹配模式和后台运行，保持书签栏整洁。",
+    "description": "Extension description"
+  },
+  "extensionTitle": {
+    "message": "    书签去重工具",
+    "description": "Extension title (toolbar tooltip)"
+  },
+  "featureSmart": {
+    "message": "智能去重：可选择按“书签名”或“书签名 + 网址”识别重复项",
+    "description": "Feature description: Smart deduplication"
+  },
+  "featureBackground": {
+    "message": "后台运行：扫描时不阻塞浏览器，支持实时进度条",
+    "description": "Feature description: Background operation"
+  },
+  "featureStop": {
+    "message": "随时停止：提供“停止”按钮，可中断扫描过程",
+    "description": "Feature description: Ability to stop"
+  },
+  "featureFolders": {
+    "message": "支持折叠文件夹：保留原有书签结构，不打乱分组",
+    "description": "Feature description: Folder support"
+  },
+  "featureSelective": {
+    "message": "选择性清理：扫描完成后可勾选要删除的重复项",
+    "description": "Feature description: Selective cleanup"
+  },
+  "featureFilter": {
+    "message": "筛选开关：灵活控制哪些文件夹参与扫描",
+    "description": "Feature description: Filter switches"
+  },
+  "featureSummary": {
+    "message": "优化的摘要显示：清晰展示重复组统计信息，一目了然",
+    "description": "Feature description: Optimized summary"
+  },
+  "buttonScan": {
+    "message": "扫描重复书签",
+    "description": "Button text: Scan"
+  },
+  "buttonStop": {
+    "message": "停止扫描",
+    "description": "Button text: Stop"
+  },
+  "buttonDelete": {
+    "message": "删除选中项",
+    "description": "Button text: Delete selected"
+  },
+  "labelMatchByName": {
+    "message": "按名称匹配",
+    "description": "Label: Match by name"
+  },
+  "labelMatchByNameAndUrl": {
+    "message": "按名称和网址匹配",
+    "description": "Label: Match by name and URL"
+  },
+  "labelProgress": {
+    "message": "扫描进度:",
+    "description": "Label: Progress"
+  },
+  "labelStatusScanning": {
+    "message": "正在扫描...",
+    "description": "Status text: Scanning"
+  },
+  "labelStatusCompleted": {
+    "message": "扫描完成!",
+    "description": "Status text: Completed"
+  },
+  "labelStatusStopped": {
+    "message": "扫描已停止。",
+    "description": "Status text: Stopped"
+  },
+  "labelStatusNoDupes": {
+    "message": "未发现重复书签。",
+    "description": "Status text: No duplicates found"
+  },
+  "labelFoldersToScan": {
+    "message": "选择要扫描的文件夹:",
+    "description": "Label: Folders to scan"
+  },
+  "labelSelectAll": {
+    "message": "全选",
+    "description": "Label: Select all"
+  },
+  "labelDeselectAll": {
+    "message": "取消全选",
+    "description": "Label: Deselect all"
+  },
+  "labelDupeGroup": {
+    "message": "重复组",
+    "description": "Label: Duplicate group"
+  },
+  "labelItemsInGroup": {
+    "message": "组内项目:",
+    "description": "Label: Items in group"
+  },
+  "placeholderSearch": {
+    "message": "搜索书签...",
+    "description": "Placeholder text: Search"
+  },
+  "tooltipSettings": {
+    "message": "设置",
+    "description": "Tooltip: Settings"
+  },
+  "tooltipRefresh": {
+    "message": "刷新",
+    "description": "Tooltip: Refresh"
+  },
+  "confirmDelete": {
+    "message": "确定要删除选中的书签吗？此操作无法撤销。",
+    "description": "Confirmation message for deletion"
+  },
+  "errorGeneric": {
+    "message": "发生未知错误。",
+    "description": "Generic error message"
+  },
+  "errorNoPermission": {
+    "message": "缺少书签访问权限。",
+    "description": "Error message: No permission"
+  }
+}
+
+
+
