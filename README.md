@@ -1,5 +1,5 @@
-# 📚 Bookmark Deduplicator - Clean Up Duplicates Efficiently
-## 📚书签去重工具 - 轻量高效清理重复书签
+
+## 📚书签去重工具 - 轻量高效清理重复书签 Bookmark Deduplicator - Clean Up Duplicates Efficiently
 
 一款轻量高效的浏览器扩展，帮助你**扫描并删除浏览器中重复的书签**，保持书签栏整洁有序。支持按名称或名称+网址匹配，后台运行不卡顿，操作直观，一键清理！
 
