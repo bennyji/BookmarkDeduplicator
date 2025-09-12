@@ -48,20 +48,7 @@ Compatible with Microsoft Edge / Google Chrome and other Chromium-based browsers
   > 🔐 你的数据，始终属于你。
 
 </details>
-## 📣 版本更新日志 | Changelog
 
-### 🎉 v3.0（最新版）
-- 🌐 **双语支持增强**：新增中文和英文语界面（自动跟随浏览器语言，也可手动切换）
-
-### 🛠️ v2.2
-- 🐞 实现了快速扫描，支持宽松和严格个重复模式
-- ⚡ 实现了用户可选择去重分组
-- 🧩 实现快速后台去重
-- 📱 edge去重后可以调转到同步界面
-
-> 💡 建议所有用户升级到 v3.0，体验更智能、更安全、更高效的书签管理！
-
----
 <details>
   <summary>🇺🇸 English</summary>
 
@@ -97,7 +84,20 @@ Compatible with Microsoft Edge / Google Chrome and other Chromium-based browsers
 </details>
 
 ---
+## 📣 版本更新日志 | Changelog
 
+### 🎉 v3.0（最新版）
+- 🌐 **双语支持增强**：新增中文和英文语界面（自动跟随浏览器语言，也可手动切换）
+
+### 🛠️ v2.2
+- 🐞 实现了快速扫描，支持宽松和严格个重复模式
+- ⚡ 实现了用户可选择去重分组
+- 🧩 实现快速后台去重
+- 📱 edge去重后可以调转到同步界面
+
+> 💡 建议所有用户升级到 v3.0，体验更智能、更安全、更高效的书签管理！
+
+---
 ## 🖼️ Screenshot Preview
 
 | 语言 Language       | 界面截图 1                         | 界面截图 2                         | 界面截图 3                         |
