@@ -9,7 +9,7 @@ A lightweight and efficient browser extension that helps you **scan and remove d
 Compatible with Microsoft Edge / Google Chrome and other Chromium-based browsers.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID)
+<!-- 这是一个注释，不会在渲染后的页面中显示 [![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID)-->
 [![Edge Add-ons](https://img.shields.io/badge/Microsoft%20Edge-0078D7?style=for-the-badge&logo=microsoft-edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/%E4%B9%A6%E7%AD%BE%E5%8E%BB%E9%87%8D%E5%B7%A5%E5%85%B7-%E8%BD%BB%E9%87%8F%E9%AB%98%E6%95%88%E6%B8%85%E7%90%86%E9%87%8D%E5%A4%8D%E4%B9%A6%E7%AD%BE/iockbhndobjnencflhcnddlbamgpdloj)
 
 ---
